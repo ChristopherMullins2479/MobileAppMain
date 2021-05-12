@@ -1,18 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Primear League Stadiums
+      PL Stadiums
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Primear League Stadiums</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
+  <label style="background-color: red;" style="width: max-content;"></label>
+
+  <!--This will list out the 20 different teams in the league and will navigate to the respective pages-->
   <ul>
     <li [routerLink]="['/arsenal']" routerDirection = "forward">Arsenal</li>
     <li [routerLink]="['/aston-villa']" routerDirection = "forward">Aston Villa</li>
@@ -35,5 +33,7 @@
     <li [routerLink]="['/west-ham']" routerDirection = "forward">Westham</li>
     <li [routerLink]="['/wolves']" routerDirection = "forward">Wolves</li>
   </ul>
+
+  <button clicked="tester()">Tester</button>
 
 </ion-content>
