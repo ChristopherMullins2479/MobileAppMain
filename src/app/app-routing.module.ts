@@ -91,6 +91,10 @@ const routes: Routes = [
     path: 'wolves',
     loadChildren: () => import('./wolves/wolves.module').then( m => m.WolvesPageModule)
   },
+  {
+    path: 'set-team-theam',
+    loadChildren: () => import('./set-team-theam/set-team-theam.module').then( m => m.SetTeamTheamPageModule)
+  },
 ];
 
 @NgModule({

@@ -9,8 +9,10 @@ export class HomePage {
 
   constructor() {}
   test : "";
-  tester(){
-  test: "arsenal"
+
+  //this will let the user set their theam using their faveourite team
+  set_Fav_Team_Theam(){
+  
   }
 
 }
