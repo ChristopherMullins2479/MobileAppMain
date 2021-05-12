@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./set-team-theam.page.scss'],
 })
 export class SetTeamTheamPage implements OnInit {
+//string to store selected team
+favTeam:string = undefined;
 
   constructor() { }
 
+  
   ngOnInit() {
   }
 

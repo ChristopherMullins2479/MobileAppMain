@@ -1,14 +1,21 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Theme</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content>
-  <button routerLink ="/home">Return</button>
+  <ion-lable>Selected Team = {{favTeam}}</ion-lable>
 
   <ion-list>
-    <ion-radio-group>
+    <ion-radio-group [(ngModel)]="favTeam">
       <ion-list-header>
         <ion-label>
           Teams
@@ -17,7 +24,7 @@
   
       <ion-item>
         <ion-label>Arsenal</ion-label>
-        <ion-radio value="arsenal"></ion-radio>
+        <ion-radio value="arsenal" style="color: red;"></ion-radio>
       </ion-item>
   
       <ion-item>
