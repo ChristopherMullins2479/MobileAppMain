@@ -37,7 +37,7 @@ favTeam:string = undefined;
     const toast = await this.toastController.create({
       message: 'Team has been Saved.',
       duration: 2000
-    });
+    }); 
     toast.present();
   }
 

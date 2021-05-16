@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
+import{Flashlight} from '@ionic-native/flashlight/ngx'
+import{Storage} from '@ionic/storage'
 
 @Component({
   selector: 'app-home',
@@ -7,12 +9,19 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
-  test : "";
+  constructor(private flashlight:Flashlight,private selected_Team:Storage) {}
+  favTeam:undefined
 
-  //this will let the user set their theam using their faveourite team
-  set_Fav_Team_Theam(){
-  
+  Tourch(){
+    this.flashlight.toggle();
+    console.log
+  }
+
+  ngOnInit()
+  {
+    this.selected_Team.get("selected_Team")
+    .then((data)=>{this.favTeam=data; })
+    .catch()
   }
 
 }

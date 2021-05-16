@@ -95,6 +95,10 @@ const routes: Routes = [
     path: 'set-team-theam',
     loadChildren: () => import('./set-team-theam/set-team-theam.module').then( m => m.SetTeamTheamPageModule)
   },
+  {
+    path: 'team-info',
+    loadChildren: () => import('./team-info/team-info.module').then( m => m.TeamInfoPageModule)
+  },
 ];
 
 @NgModule({

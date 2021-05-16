@@ -8,7 +8,7 @@
 
 <ion-content [fullscreen]="true">
 
-  <label style="background-color: red;" style="width: max-content;"></label>
+  <label>Faveourite Team = {{favTeam}}</label>
 
   <!--This will list out the 20 different teams in the league and will navigate to the respective pages-->
   <ul>
@@ -35,5 +35,9 @@
   </ul>
 
   <button [routerLink]="['/set-team-theam']" >Set Theme</button>
+  <p></p>
+  <button [routerLink]="['/team-info']">Team Info</button>
+
+  <ion-button (click)="toggle_Tourch()">Torch</ion-button>
 
 </ion-content>
